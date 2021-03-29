@@ -1,58 +1,74 @@
-body {
+body{
     font-family: "Raleway", sans-serif;
-  }
-  body a {
+}
+body a{
     text-decoration: none;
-  }
-  header {
-      height: auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: auto;
-      border-bottom: solid 2px #f2f2f2;
-  }
-  header :first-child{
+}
+header{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+    border-bottom: solid 2px #f2f2f2;
+}
+header :first-child{
    display: flex;
-  }
-  header >a{
+}
+header >a{
       margin: 20px 0px 0px 40px;
       
-  }
-  header > a:nth-child(2) {
+}
+header> a:nth-child(2){
       margin-top: 35px;
       display: flex;
-      margin-right: 20px;
+      color: #0065FC;
+    font-weight: bold;
+    font-family: raleway;
     
-  }
-  header :nth-child(3) {
+}
+header :nth-child(3) {
       display: flex;
       margin: auto;
       justify-content: center;
-      margin: 0px;
       width: 100%;
-
-  }
+}
   
-  header >nav ul {
+header >nav ul {
     display: flex;
     /* align-items: center;
     justify-content: space-around;
     margin: 0; */
     /* background: grey; h */
-  } 
-  header >nav li {
+} 
+header >nav li {
       margin:0px;
       display: flex;
+      width: 50%;
       
   }
   header >nav ul li a {
       /* background: pink; */
       justify-content: center;
       margin: auto;
-      padding: 26px 28px;
+      padding: 10px 28px;
   }
   header >nav li:hover {
       padding-bottom:20px;
       border-bottom: solid 3px blue;
   }
+  #search-bar h1{
+      margin-top: 20px;
+  }
+  #search-bar{
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    
+  }
+#search-bar span{
+    display: none;
+}
