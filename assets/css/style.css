@@ -9,7 +9,8 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 90%;
+      width: auto;
+      border-bottom: solid 2px #f2f2f2;
   }
   header :first-child{
    display: flex;
@@ -21,6 +22,7 @@ body {
   header > a:nth-child(2) {
       margin-top: 35px;
       display: flex;
+      margin-right: 20px;
     
   }
   header :nth-child(3) {
@@ -29,6 +31,7 @@ body {
       justify-content: center;
       margin: 0px;
       width: 100%;
+
   }
   
   header >nav ul {
@@ -49,7 +52,7 @@ body {
       margin: auto;
       padding: 26px 28px;
   }
-  header >nav li a:hover {
+  header >nav li:hover {
       padding-bottom:20px;
-      border-bottom: solid 1px blue;
+      border-bottom: solid 3px blue;
   }
