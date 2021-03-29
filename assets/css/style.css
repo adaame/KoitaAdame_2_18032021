@@ -1,96 +1,55 @@
-body{
-    font-family: 'Raleway', sans-serif;
-}
-body>div img{
-    height: 50px;
-    width: auto;
-    display: inline;
-    justify-content: space-evenly;
-}
-body>div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-}
-body div a{
-    margin-top: 7px;
-    color: #0065FC;
-    text-decoration-line: none;
-}
-
-header li{ 
-    text-decoration: none;
-    display: inline-flex;
-    padding: 25px;  
-}
-header li a{
-    text-decoration: none;
-    color: rgb(37, 35, 35);
-}
-header span{   
-  color: blue;
-}
-header li :hover{
-    border-top: 2px solid #0065FC;
-    padding-top: 15px;
-
-}
-#title{
-    font-size: 20px;
-    font-weight: bold;
-}
-/*------------hébergement-------------*/
-body{
-    padding: 0 20px;
-}
-#search p{
-    font-size: x-small;
-    padding: 10px 0 10px;
-}
-#title{
-    padding-bottom: 10px;
-}
-#filters{
-    display:flex;
-    margin: 20px 0px 20px;
-    align-items: center;
-   
-}
-#filters li {
-    display: inline-flex;
-    color: black;
-    margin: 10px;
-    padding: 10px;
-    border: solid 1px lightgrey;
-    border-radius: 30px;
-}
-#filters ul li a {
-    text-decoration:none;
-    color: black;
-}
-#filters ul li:hover {
-    background: #0065FC;
-}
-/*#filters li:nth-child(1) {
-    background: lightblue;   
-}
-#filters li:nth-child(2) {
-    background: pink;   
-}
-#filters li:nth-child(3) {
-    background: lightgrey;  
-}
-#filters li:nth-child(4) {
-    background: lightgreen;  
-}*/
-#info p::before{
-    content : "\0024D8";
+body {
+    font-family: "Raleway", sans-serif;
   }
-  figure img {
+  body a {
+    text-decoration: none;
+  }
+  header {
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 90%;
+  }
+  header :first-child{
+   display: flex;
+  }
+  header >a{
+      margin: 20px 0px 0px 40px;
+      
+  }
+  header > a:nth-child(2) {
+      margin-top: 35px;
+      display: flex;
+    
+  }
+  header :nth-child(3) {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      margin: 0px;
       width: 100%;
   }
-/*#filters h3{
-
-}/
-
+  
+  header >nav ul {
+    display: flex;
+    /* align-items: center;
+    justify-content: space-around;
+    margin: 0; */
+    /* background: grey; h */
+  } 
+  header >nav li {
+      margin:0px;
+      display: flex;
+      
+  }
+  header >nav ul li a {
+      /* background: pink; */
+      justify-content: center;
+      margin: auto;
+      padding: 26px 28px;
+  }
+  header >nav li a:hover {
+      padding-bottom:20px;
+      border-bottom: solid 1px blue;
+  }
