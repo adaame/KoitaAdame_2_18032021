@@ -96,3 +96,16 @@ header >nav li:hover {
 #search-bar form input{
     border: 1px solid #d3d3d32e;;
 }
+#search-bar form button{
+    border: 7px solid #0065FC;
+    border-radius: 9px 9px 9px 9px;
+    background: #0065FC;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -ms-border-radius: 9px 9px 9px 9px;
+    -o-border-radius: 9px 9px 9px 9px;
+}
+#search-bar form button i{
+    color: white;
+    margin-bottom: 3px;
+}
