@@ -93,3 +93,6 @@ header >nav li:hover {
     border-bottom-left-radius: 8px;
     background: #d3d3d32e;
 }
+#search-bar form input{
+    border: 1px solid #d3d3d32e;;
+}
