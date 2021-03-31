@@ -1,6 +1,10 @@
 *{
     font-family: "Raleway", sans-serif;
 }
+/* */
+section{
+    padding: 20px;
+}
 body a{
     text-decoration: none;
 }
@@ -20,74 +24,75 @@ header >a:last-of-type{
     font-weight: bold;      
 }
 header nav{
+    margin-top: 20px;
     flex-basis: 100%;
 }
   
 header >nav ul {
     display: flex;
     width: 100%;
+    text-align: center;
 } 
 header >nav li {
    flex-basis: 50%; 
+   border-bottom: 3px solid #F2F2F2;
+   padding-bottom: 15px;
 }
 header >nav ul li a {
-    justify-content: center;
-    margin: auto;
-    padding: 10px 28px;
     color: black;
 }
 header >nav li:hover {
-    border-bottom: solid 3px blue;
+    border-bottom: solid 3px #0065FC;
+}
+header >nav li:hover a {
+    color: #0065FC;
 }
 #search-bar h1{
     padding: 15px 0;
-    font-size: 1rem; font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 #search-bar :nth-child(2){
     padding-bottom: 10px;
-    font-size: smaller;
     font-weight: 200;
 }
-#search-bar :nth-child(3){
+#search-bar form{
+    align-items: center;
+    height: 3em;
     padding-top: 10px;
-    align-content: center;
     justify-content: center;
     display: flex;
+    border:1px solid #F2F2F2;
+    border-radius: 12px;
+    max-width: 350px;
 }
-#search-bar{
-    height: auto;
-    width: 90%;
-    flex-direction: column;
-    display: flex;
-    margin-left: auto;
-    padding: 10px 0;
-
-}
-#search-bar span{
+#search-bar form button span{
     display: none;
 }
-#search-bar form label:first-child{
-    border: 7px solid #eee;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    background: #eee;
-    padding: 4px 6px;
+#search-bar form label i{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background: #F2F2F2;
+    line-height: 3em;
+    width: 3em;
+    text-align: center;
 }
 #search-bar form input{
-    border: 1px solid #d3d3d32e;;
+    height: 100%;
+    width: 50%;
+    padding: 0 1em;
+    flex:1;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 #search-bar form button{
-    border: 7px solid #0065FC;
-    border-radius: 9px 9px 9px 9px;
-    background: #0065FC;
-    -webkit-border-radius: 9px 9px 9px 9px;
-    -moz-border-radius: 9px 9px 9px 9px;
-    -ms-border-radius: 9px 9px 9px 9px;
-    -o-border-radius: 9px 9px 9px 9px;
-}
-#search-bar form button i{
+    line-height: 3em;
+    text-align: center;
     color: white;
-    margin-bottom: 3px;
+    border: 0;
+    border-radius: 1em ;
+    background: #0065FC;
+    flex:0 0 3em;
 }
 #filters :first-child{
     display: flex;
