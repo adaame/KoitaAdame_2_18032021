@@ -142,14 +142,14 @@ margin: 5px;
     width: 17px;
 
 }
-#filters p > i{
-    padding-right: 10px;
+#filters p :nth-child(1){
+    padding: 4px;
     border: 2px solid #F2F2F2;
     border-radius: 24px;
-    height: 20px;
-    width: 10px;
-    margin: 10px;
-    font-weight: lighter;
+    height: 8px;
+    width: 8px;
+    margin: 7px;
+    font-size: x-small;
     text-align: center;
     color: #0065FC;
 }
