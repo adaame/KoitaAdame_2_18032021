@@ -4,6 +4,7 @@
 }
 section{
     padding: 20px;
+    /* width: 299px;  */
 }
 body a{
     text-decoration: none;
@@ -159,3 +160,13 @@ margin: 5px;
     font-size: smaller;
     font-weight: 100;
 }
+/*-----------------Popular-----------------*/
+#popular  h2{ /*A changer plutard*/
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+/* #popular{
+    height: 400px;
+    background: #F2F2F2;
+} */
