@@ -153,3 +153,9 @@ margin: 5px;
     text-align: center;
     color: #0065FC;
 }
+#filters p{
+    display: flex;
+    align-items: baseline;
+    font-size: smaller;
+    font-weight: 100;
+}
