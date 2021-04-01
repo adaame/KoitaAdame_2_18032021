@@ -106,18 +106,29 @@ opacity: 1;
     font-size: 1em;
 }
 /*-----------------filters-----------------*/
-#filters :first-child{
-    display: flex;
-}
 
+#filters h2{
+    margin-bottom: 10px;
+}
+#filters ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 299px;
+}
+/* #filters ul li {
+margin: 5px;
+} */
 #filters ul li a{
     align-items: center;
     height: 2.2em;
     justify-content:flex-start;
     display: flex;
-    border: 1px solid #F2F2F2;
-    border-radius: 15px;
+    border: 2px solid #F2F2F2;
+    border-radius: 24px;
     max-width: 350px;
+    flex-basis: 100%;
+    margin:5px;
 }
 #filters ul li a i{
     border: 1px solid #DEEBFF;
