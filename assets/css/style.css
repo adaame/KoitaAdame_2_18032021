@@ -161,12 +161,12 @@ margin: 5px;
     font-weight: 100;
 }
 /*-----------------Popular-----------------*/
-#popular  h2{ /*A changer plutard*/
-    display: flex;
-    justify-content: space-between;
-    margin: 25px 0;
+#popular  h2 > i{ /*A changer plutard*/
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    margin:20px 160px 25px;
 }
-/* #popular{
-    height: 400px;
+#popular{
     background: #F2F2F2;
-} */
+}
