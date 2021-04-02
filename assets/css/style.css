@@ -170,3 +170,31 @@ margin: 5px;
 #popular{
     background: #F2F2F2;
 }
+#popular article a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 150px;
+    border: 1px solid red;
+    margin: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#popular figure img {
+    width: 130px;
+    height: 130px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#popular article a div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#popular article a div ul{
+    display: flex;
+
+}
