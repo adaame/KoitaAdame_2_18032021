@@ -169,19 +169,30 @@ margin: 5px;
 }
 #popular{
     background: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-right: 10px;
+}
+#popular article {
+    justify-content: center;
+    display: flex;
 }
 #popular article a{
     display: flex;
     align-items: center;
     justify-content: center;
     background: white;
-    height: 150px;
-    border: 1px solid red;
-    margin: 10px;
+    /* height: 150px; */
+    border: 1px solid white;
+    margin: 8px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    width: 100%;
+    padding: 4px 4px;
 }
 #popular figure img {
     width: 130px;
@@ -190,11 +201,25 @@ margin: 5px;
     border-bottom-left-radius: 15px;
 }
 #popular article a div {
+  
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    background: white;
+    color: black;
+    height: 105px;
+    margin: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 #popular article a div ul{
     display: flex;
-
+}
+#popular article a div> :nth-child(2) {
+font-size: smaller;
+font-weight: 100;
+}
+#popular article a div> :nth-child(3){
+    margin-top: 45px;
 }
