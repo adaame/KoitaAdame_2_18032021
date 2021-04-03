@@ -345,3 +345,13 @@ margin: 5px;
 #activities div{
     padding: 15px;
 }
+/*-----------------footer-----------------*/
+#footer{
+    background: #DEEBFF;
+    width: 100%;
+}
+#footer div{
+    background: #DEEBFF;
+    width: 100%;
+}
+

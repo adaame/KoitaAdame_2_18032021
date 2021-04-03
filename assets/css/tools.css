@@ -3,4 +3,5 @@
 }
 .d-flex{
     display: flex;
+    flex-wrap: wrap;
 }
