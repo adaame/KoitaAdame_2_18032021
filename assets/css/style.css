@@ -12,6 +12,10 @@ main{
     display: flex;
     flex-wrap: wrap;
 }
+h2{
+    padding: 18px 0;
+    font-size: large;
+}
 li i{
     color: #F2F2F2;
 }
@@ -228,4 +232,18 @@ margin: 5px;
 }
 #popular article a div> :nth-child(3){
     margin-top: 45px;
+}
+/*-----------------accomodations-----------------*/
+
+#accomodations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+#accomodations h2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 12px;
 }
