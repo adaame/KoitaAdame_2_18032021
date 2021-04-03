@@ -3,8 +3,7 @@
     font-family: "Raleway", sans-serif;
 }
 section{
-    padding: 20px;
-    /* width: 299px;  */
+    padding: 10px;
 }
 body a{
     text-decoration: none;
@@ -26,6 +25,7 @@ header{
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    margin-top: 20px;
 }
 header >a:first-of-type{
     margin: 20px 0 0 20px; 
@@ -174,19 +174,19 @@ margin: 5px;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-right: 10px;
 }
-#popular  h2 {
+#popular h2{
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin: 12px;
 }
-#popular article a div> :nth-child(2){
+#popular p{
     font-size: smaller;
     font-weight: 100;
+    margin-top: 10px;
 }
-#popular article {
+#popular article{
     justify-content: center;
     display: flex;
 }
