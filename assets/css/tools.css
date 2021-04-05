@@ -1,7 +1,7 @@
 .bold{
     font-weight: bold;
 }
-.d-flex{
+.d-flexWithWrapW{
     display: flex;
     flex-wrap: wrap;
 }
