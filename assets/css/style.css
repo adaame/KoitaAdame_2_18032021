@@ -61,6 +61,8 @@ header >nav li:hover {
 }
 header >nav li:hover a {
     color: #0065FC;
+    opacity: 0.6;
+    transition: 0.3s;    
 }
 /*-----------------Search-bar-----------------*/
 #search-bar h1{
