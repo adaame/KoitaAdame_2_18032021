@@ -305,7 +305,6 @@ margin: 5px;
 #accomodations a:last-of-type {
     display: flex;
     width: 100%;
-    margin: 27px auto;
     color: black;
     font-weight: bolder;
 }
@@ -336,6 +335,7 @@ margin: 5px;
     padding: 10px;
     height: 33px;
     background: white;
+    font-weight: 600;
 }
 #activities article{
     justify-content: space-between;
@@ -373,4 +373,6 @@ footer ul li a{
 
 
 
-/* Revoir les card activities certaint emboité dans d'autre , img non conforme a la maquette,modif effet grad */
+/* filters manque de largeur,
+ Revoir les card activities certaint emboité dans d'autre , img non conforme a la maquette,    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; fonctione pas sur activities */
