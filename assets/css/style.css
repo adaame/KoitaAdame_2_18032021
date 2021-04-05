@@ -14,7 +14,7 @@ main{
 }
 h2{
     padding: 18px 0;
-    font-size: large;
+    font-size: x-large;
 }
 li i{
     color: #F2F2F2;
@@ -126,9 +126,7 @@ opacity: 1;
     flex-direction: row;
     width: 299px;
 }
-/* #filters ul li {
-margin: 5px;
-} */
+
 #filters ul li a{
     align-items: center;
     height: 2.2em;
