@@ -240,7 +240,7 @@ margin: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: ghostwhite;
+    background: white;
     width: 100%;
 }
 #accomodations h2{
@@ -276,6 +276,7 @@ margin: 5px;
     border-bottom-right-radius: 15px;
     width: 100%;
     padding: 4px 4px;
+    box-shadow: 0.1em 0.1em 1.1em lightgrey;
 }
 #accomodations figure img{
     width: 100%;
@@ -313,7 +314,6 @@ margin: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: ghostwhite;
     width: 100%;
 }
 #activities h2{
@@ -326,7 +326,6 @@ margin: 5px;
     width: 100%;
     height: 130px;
     text-align: center;
-
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -341,7 +340,7 @@ margin: 5px;
 #activities article{
     justify-content: space-between;
     display: flex;
-
+    box-shadow: 0.1em 0.1em 1.1em lightgrey;
 }
 #activities div{
     padding: 15px;
@@ -351,6 +350,7 @@ footer{
     width: auto;
     background: #f2f2f2;
     margin-right: 20px;
+    
 
 }
 footer div{
