@@ -231,7 +231,6 @@ opacity: 1;
     margin-top:auto;
 }
 /*-----------------accomodations-----------------*/
-
 #accomodations{
     display: flex;
     flex-wrap: wrap;
@@ -291,7 +290,6 @@ opacity: 1;
 #accomodations article a div> :nth-child(3){
     margin-top: 13px;
 }
-
 #accomodations a:last-of-type {
     display: flex;
     width: 100%;
@@ -301,8 +299,6 @@ opacity: 1;
 }
 /*-----------------activities-----------------*/
 #activities{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
@@ -320,10 +316,12 @@ opacity: 1;
     border-top-right-radius: 15px;
 }
 #activities figcaption{
+    display: flex;
+    align-items: center;
     color: black;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding: 10px;
+    padding: 25px;
     height: 33px;
     background: white;
     font-weight: 600;
@@ -340,24 +338,12 @@ opacity: 1;
 #activities :nth-child(5) > article{
     margin: 20px auto;
 }
-#activities figcaption{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-/*-----------------footer-----------------*/
-footer{
-    width: auto;
-    background: #f2f2f2;
-    margin-right: 20px;
-    
 
-}
+/*-----------------footer-----------------*/
 footer div{
-    width: auto;
+    width: 100%;
+    padding: 10px;
     background: #f2f2f2;
-    height: 160px;
-    padding-left: 12px;
 }
 footer div h3{
     padding:15px 9px;
@@ -370,9 +356,3 @@ footer ul li a{
     color: black;
     font-weight: lighter;
 }
-
-
-
-/* filters manque de largeur,
- Revoir les card activities certaint emboité dans d'autre , img non conforme a la maquette,    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px; fonctione pas sur activities */
