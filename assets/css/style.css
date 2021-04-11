@@ -161,13 +161,13 @@ opacity: 1;
 #filters p i{
     border: 1px solid #F2F2F2;
     border-radius: 50%;
-    /* height: 1.7px; */
-    width: 1.7px;
+    height: 1.7em;
+    width: 1.7em;
     line-height: 1.7em;
-    min-width: 1.7 ;
-    font-size: x-small;
+    min-width: 1.7em;
     text-align: center;
     color: #0065FC;
+    margin-right: 15px;
 
 }
 #filters p{
@@ -181,7 +181,7 @@ opacity: 1;
 #popular{
     background: #F2F2F2;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
 }
@@ -189,7 +189,7 @@ opacity: 1;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 12px;
+    font-size: 1.3em;
 }
 #popular p{
     font-size: smaller;
@@ -197,48 +197,38 @@ opacity: 1;
     margin-top: 10px;
 }
 #popular article{
-    justify-content: center;
     display: flex;
+    height: 150px;
 }
 #popular article a{
     display: flex;
-    align-items: center;
-    justify-content: center;
     background: white;
-    /* height: 150px; */
-    border: 1px solid white;
-    margin: 8px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: 100%;
-    padding: 4px 4px;
+    border-radius: 15px;
+    padding: 4px;
+    height: 100%;
+}
+#popular figure{
+    flex-basis: 45%;
 }
 #popular figure img{
-    width: 130px;
-    height: 115px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
 }
 #popular article a div{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     background: white;
     color: black;
-    height: 105px;
+    flex-basis: 55%;
     margin: 10px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 #popular article a div ul{
     display: flex;
-}
-#popular article a div> :nth-child(3){
-    margin-top: 45px;
+    margin-top:auto;
 }
 /*-----------------accomodations-----------------*/
 
@@ -342,9 +332,18 @@ opacity: 1;
     justify-content: space-between;
     display: flex;
     box-shadow: 0.1em 0.1em 1.1em lightgrey;
+    border-radius: 15px;
 }
-#activities div{
-    padding: 15px;
+#activities :nth-child(3) > article{
+    margin: 20px auto;
+}
+#activities :nth-child(5) > article{
+    margin: 20px auto;
+}
+#activities figcaption{
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 /*-----------------footer-----------------*/
 footer{
