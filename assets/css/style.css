@@ -199,6 +199,7 @@ opacity: 1;
 #popular article{
     display: flex;
     height: 150px;
+    margin-bottom: 10px;
 }
 #popular article a{
     display: flex;
@@ -301,11 +302,9 @@ opacity: 1;
 #activities{
     justify-content: center;
     width: 100%;
+    padding: 20px 20px 48px;
 }
 #activities h2{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
     margin: 12px;
 }
 #activities a{
