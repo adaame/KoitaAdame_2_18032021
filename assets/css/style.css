@@ -342,7 +342,7 @@ opacity: 1;
 #activities :nth-child(5) > article{
     margin: 20px auto;
 }
-#activities :not(:last-child){
+#activities img {
     object-position: 0px -20px;
 }
 
