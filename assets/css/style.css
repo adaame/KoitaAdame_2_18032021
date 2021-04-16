@@ -338,6 +338,7 @@ opacity: 1;
 }
 #activities :nth-child(3) > article{
     margin: 20px auto;
+    object-position: 50% 43%;
 }
 #activities :nth-child(5) > article{
     margin: 20px auto;
@@ -345,6 +346,9 @@ opacity: 1;
 #activities img {
     object-position: 0% 20%;
 }
+/* #activities :nth-child(3n+1){
+    object-position: 50% 43%;
+} */
 
 
 
