@@ -20,6 +20,7 @@ h2{
 }
 li i{
     color: #F2F2F2;
+    font-size: 0.8em;
 }
 .active{
     color: #0065FC;
@@ -197,7 +198,6 @@ opacity: 1;
     margin-top: 10px;
 }
 #popular article{
-    display: flex;
     height: 150px;
     margin-bottom: 10px;
 }
@@ -234,7 +234,7 @@ opacity: 1;
 /*-----------------accomodations-----------------*/
 #accomodations{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     background: white;
     width: 100%;
@@ -253,37 +253,41 @@ opacity: 1;
     font-weight: 100;
     margin-top: 10px;
 }
-#accomodations article{
-    justify-content: center;
-    display: flex;
-}
 #accomodations article a{
     display: flex;
-    flex-flow: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: white;
     border: 1px solid white;
     margin: 8px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
     width: 100%;
-    padding: 4px 4px;
+    padding: 4px;
     box-shadow: 0.1em 0.1em 1.1em lightgrey;
+    height: 100%;
 }
+#accomodations figure {
+    width: 100%;
+    height: 60%;
+}
+
 #accomodations figure img{
     width: 100%;
-    height: 130px;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+#accomodations article{
+    height: 180px;
+    margin-bottom: 10px;
 }
 #accomodations article a div{
     width: 100%;
     color: black;
     padding: 5px;
+    height: 40%;
 }
 #accomodations article a div ul{
     display: flex;
@@ -291,7 +295,7 @@ opacity: 1;
 #accomodations article a div> :nth-child(3){
     margin-top: 13px;
 }
-#accomodations a:last-of-type {
+#accomodations > a{
     display: flex;
     width: 100%;
     color: black;
@@ -299,34 +303,31 @@ opacity: 1;
     margin-top: 20px;
 }
 /*-----------------activities-----------------*/
-#activities{
-    justify-content: center;
+#activities {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 20px 20px 48px;
 }
-#activities h2{
-    margin: 12px;
-}
-#activities a{
-    overflow : hidden;
+#activities figure{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 #activities figure img{
     width: 100%;
-    height: 130px;
+    height: 40%;
+    flex: 1;
     text-align: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit : cover;
 
+
 }
 #activities figcaption{
-    display: flex;
-    align-items: center;
     color: black;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     padding: 25px;
-    height: 33px;
+    flex: 0 0 55px;
     background: white;
     font-weight: 600;
 }
@@ -335,6 +336,10 @@ opacity: 1;
     display: flex;
     box-shadow: 0.1em 0.1em 1.1em lightgrey;
     border-radius: 15px;
+    height: 220px;
+}
+#activities article a{
+    height: 100%;
 }
 #activities :nth-child(3) > article{
     margin: 20px auto;
