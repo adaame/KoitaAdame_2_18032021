@@ -40,7 +40,8 @@ header >a:first-of-type{
 header >a:last-of-type{
     margin-right: 20px;
     color: #0065FC;
-    font-weight: bold;      
+    font-weight: bold; 
+    margin-top: 6px;     
 }
 header nav{
     margin-top: 20px;
