@@ -248,11 +248,11 @@ opacity: 1;
 /* #accomodations article a div {
     box-shadow: 2px 2px 2px 2px #f2f2f282;
 } */
-#accomodations p{
+/* #accomodations p{
     font-size: smaller;
     font-weight: 100;
     margin-top: 10px;
-}
+} */
 #accomodations article a{
     display: flex;
     flex-direction: column;
@@ -294,9 +294,8 @@ opacity: 1;
 #accomodations article a div ul{
     display: flex;
 }
-
 #accomodations div{
-    margin: 10px;
+    margin-top: 4px;
 }
 #accomodations > a{
     display: flex;
@@ -358,13 +357,13 @@ opacity: 1;
     margin: 20px auto;
 } */
 #activities img {
-    object-position: 0% 50%;
+    object-position: 0% 0%;
 }
 #activities :nth-child(3) article:first-child img{ /*frioul img*/
-    object-position: 50% 43%;
+    object-position: 0% 38%;
 }
 #activities :nth-child(5) article:last-child img{/*longchamp park img*/
-    object-position: 50% 30%;
+    object-position: 0% 3%;
 }
 
 
