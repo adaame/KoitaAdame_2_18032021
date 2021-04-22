@@ -51,18 +51,17 @@ header >nav ul {
     width: 100%;
     text-align: center;
 } 
-header >nav li {
+header >nav ul a {
    flex-basis: 50%; 
    border-bottom: 3px solid #F2F2F2;
    padding-bottom: 15px;
+   color: black;
 }
-header >nav ul li a {
-    color: black;
-}
-header >nav li:hover {
+
+header >nav a:hover {
     border-bottom: solid 3px #0065FC;
 }
-header >nav li:hover a {
+header >nav a:hover li {
     color: #0065FC;
     opacity: 0.6;
     transition: 0.3s;    
@@ -359,7 +358,7 @@ opacity: 1;
 #activities img {
     object-position: 0% 0%;
 }
-#activities :nth-child(3) article:first-child img{ /*frioul img*/
+#activities :nth-child(3) article:first-child img{ /*fort de pomègue img*/
     object-position: 0% 38%;
 }
 #activities :nth-child(5) article:last-child img{/*longchamp park img*/
