@@ -102,7 +102,6 @@ header >nav a:hover li {
     font-size: 1.1em;
     font-weight: bold;
     border:0;
-    cursor: pointer;
 }
 #search-bar form input::placeholder{
 color: black;
@@ -120,6 +119,7 @@ opacity: 1;
     background: #0065FC;
     flex:0 0 3em;
     font-size: 1em;
+    cursor: pointer;
 }
 /*-----------------filters-----------------*/
 
@@ -143,7 +143,7 @@ opacity: 1;
 #filters ul li a{
     display: flex;
     align-items: center;
-    height: 2.2em;
+    height: 2.5em;
     color: black;
     border: 2px solid #F2F2F2;
     border-radius: 24px;
@@ -156,7 +156,7 @@ opacity: 1;
     color: #0065FC;
     border-radius: 50%;
     height: 2.5em;
-    /*permetalignement*/width: 2.5em;
+    width: 2.5em;/*permet alignement*/
     line-height: 2.5em;
     text-align: center;
     margin-right: 15px;
@@ -199,7 +199,6 @@ opacity: 1;
     font-size: 1.3em;
 }
 #popular p{
-    font-size: smaller;
     font-weight: 100;
     margin-top: 10px;
 }
@@ -251,14 +250,7 @@ opacity: 1;
     justify-content: space-between;
     font-size: 1.3em;
 }
-/* #accomodations article a div {
-    box-shadow: 2px 2px 2px 2px #f2f2f282;
-} */
-/* #accomodations p{
-    font-size: smaller;
-    font-weight: 100;
-    margin-top: 10px;
-} */
+
 #accomodations article a{
     display: flex;
     flex-direction: column;
@@ -285,7 +277,7 @@ opacity: 1;
     border-top-right-radius: 11px;
 }
 #accomodations article{
-    height: 180px;
+    height: 200px;
     margin-bottom: 10px;
 }
 #accomodations article a div{
@@ -314,7 +306,8 @@ opacity: 1;
 #activities {
     display: flex;
     flex-direction: column;
-    width: 100%;  
+    width: 100%; 
+    margin-bottom: 30px; 
 }
 #activities article{
     margin-top: 20px;
