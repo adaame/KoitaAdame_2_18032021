@@ -330,7 +330,7 @@ opacity: 1;
     border-top-right-radius: 15px;
     object-fit : cover;
 }
-#activities a figcaption{
+#activities a h3 {
     color: black;
     flex: 0 0 55px;
     font-weight: 600;
