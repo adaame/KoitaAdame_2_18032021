@@ -36,6 +36,9 @@ header{
 header >li:first-of-type{
     margin-left: 20px; 
 }
+header a img{
+    margin-left: 20px;
+}
 header >a:last-of-type{
     margin-right: 20px;
     color: #0065FC;
@@ -53,16 +56,14 @@ header >nav ul {
     justify-content: space-around;
 } 
 header >nav ul li {
-   flex-basis: 50%; 
    border-bottom: 3px solid #F2F2F2;
    padding-bottom: 15px;
-   /* color: black; */
 }
 header >nav ul li a{
     color: black;
     padding: 10px 55px 15px 55px;
     width: 100%;
-    /* rend la zone li 100% clikable */
+    /* rend la zone li  a 100% cliquable */
 } 
 
 header >nav li:hover {
@@ -371,7 +372,6 @@ opacity: 1;
 #activities :nth-child(6) a article:last-child img{
     object-position: 0% 5%;
 }
-
 
 /*-----------------footer-----------------*/
 footer div{
