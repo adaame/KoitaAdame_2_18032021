@@ -33,7 +33,7 @@ header{
     align-items: center;
     margin-top: 20px;
 }
-header >a:first-of-type{
+header >li:first-of-type{
     margin-left: 20px; 
 }
 header >a:last-of-type{
@@ -41,7 +41,7 @@ header >a:last-of-type{
     color: #0065FC;
     font-weight: bold; 
     margin-top: 6px;     
-}
+}/*inscription*/
 header nav{
     margin-top: 20px;
     flex-basis: 100%;
@@ -50,18 +50,25 @@ header >nav ul {
     display: flex;
     width: 100%;
     text-align: center;
+    justify-content: space-around;
 } 
-header >nav ul a {
+header >nav ul li {
    flex-basis: 50%; 
    border-bottom: 3px solid #F2F2F2;
    padding-bottom: 15px;
-   color: black;
+   /* color: black; */
 }
+header >nav ul li a{
+    color: black;
+    padding: 10px 55px 15px 55px;
+    width: 100%;
+    /* rend la zone li 100% clikable */
+} 
 
-header >nav a:hover {
+header >nav li:hover {
     border-bottom: solid 3px #0065FC;
 }
-header >nav a:hover li {
+header >nav li:hover a {
     color: #0065FC;
     opacity: 0.6;
     transition: 0.3s;    
