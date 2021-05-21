@@ -499,3 +499,24 @@ footer ul li a{
         display: flex;
     }
 }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main{
+    display: contents;
+    }
+    .d-flexWithWrapW{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 40px;
+}
+
+header nav {
+    margin-top: 20px;
+    flex-basis: 0;
+}
+   
+#popular #accomodations{
+    display: flex;
+    flex-wrap: wrap;
+    }
+}
