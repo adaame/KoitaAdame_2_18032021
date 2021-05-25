@@ -598,7 +598,7 @@ footer ul li a {
 
   /*------------------Header-----------------*/
   header {
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     align-items: baseline;
     margin-top: 20px;
@@ -773,12 +773,6 @@ footer ul li a {
     flex-direction: column;
     flex: 1;
   }
-  /* #activities div:nth-child(1) {
-    display: flex;
-    flex-wrap: wrap;
-    height: 500px;
-    width: 400px;
-  } */
   #activities div:nth-child(2) a {
     height: 100%;
     margin: 0 20px 20px;
