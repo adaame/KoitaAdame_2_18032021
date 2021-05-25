@@ -55,6 +55,9 @@ header > a:last-of-type {
   color: #0065fc;
   font-weight: bold;
   margin-top: 6px;
+  position: absolute;
+  top: 30px;
+  right: 5px;
 }
 
 /*inscription*/
@@ -609,7 +612,7 @@ footer ul li a {
   }
 
   header > a:first-of-type {
-    position: absolute;
+    position: none;
     top: 0;
     padding-top: 20px;
   }
@@ -622,7 +625,7 @@ footer ul li a {
 
   /*inscription*/
   /*-----------------search-bar-----------------*/
-  #search-bar form button >i {
+  #search-bar form button > i {
     display: none;
   }
 
@@ -642,7 +645,7 @@ footer ul li a {
     font-size: 1.1em;
     width: 10%;
   }
-  #filters ul li a i{
+  #filters ul li a i {
     height: 2.8em;
     width: 2.8em;
     line-height: 2.8em;
@@ -650,8 +653,7 @@ footer ul li a {
   #filters p {
     display: flex;
     font-weight: 100;
-
-}
+  }
 
   /*-----------------towParts-----------------*/
   .twoParts {
@@ -749,7 +751,7 @@ footer ul li a {
     width: 100%;
     height: auto;
   }
-  
+
   #activities a {
     justify-content: space-between;
     display: flex;
@@ -765,7 +767,7 @@ footer ul li a {
     line-height: 55px;
     padding: 0 15px;
   }
-  #activities div{
+  #activities div {
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -777,15 +779,14 @@ footer ul li a {
     height: 500px;
     width: 400px;
   } */
-  #activities div:nth-child(2) a{
+  #activities div:nth-child(2) a {
     height: 100%;
     margin: 0 20px 20px;
-
   }
-   #activities> div:nth-child(2) {
+  #activities > div:nth-child(2) {
     height: 500px;
   }
-  
+
   #activities div:nth-child(4) {
     display: flex;
     flex-wrap: wrap;
