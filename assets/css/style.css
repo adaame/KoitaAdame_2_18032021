@@ -100,8 +100,8 @@ header > nav li:hover a {
 }
 .inscription_link {
   position: absolute;
-  top: 0px;
-  left: 270px;
+  /* top: 0px;
+  left: 270px; */
  
 }
 /*-----------------Search-bar-----------------*/
