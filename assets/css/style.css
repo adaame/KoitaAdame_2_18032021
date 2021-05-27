@@ -78,8 +78,8 @@ header > nav ul {
 
 header > nav ul li {
   border-bottom: 3px solid #f2f2f2;
-  /* padding-bottom: 15px;
-  flex-grow: 1; s'etire pour prendre l'espace totalement */
+  padding-bottom: 15px;
+  /*flex-grow: 1; s'etire pour prendre l'espace totalement */
 }
 
 header > nav ul li a {
@@ -100,7 +100,8 @@ header > nav li:hover a {
 }
 .inscription_link {
   position: absolute;
-  top: 32;
+  top: 0px;
+  left: 270px;
  
 }
 /*-----------------Search-bar-----------------*/
@@ -449,7 +450,7 @@ header > nav li:hover a {
 /*-----------------footer-----------------*/
 footer div {
   width: 100%;
-  padding: 10px;
+  padding-inline: 10px;
   background: #f2f2f2;
   display: block;
 }
