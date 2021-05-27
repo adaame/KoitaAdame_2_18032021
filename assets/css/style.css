@@ -58,8 +58,8 @@ header > a:last-of-type {
 }
 .inscription_link{
   position: absolute;
-  top: 30px;
-  /* right: 5px; */
+ top: 30px;
+   right: 5px;
   left: 120px;
 }
 
@@ -100,8 +100,8 @@ header > nav li:hover a {
 }
 .inscription_link {
   position: absolute;
-  /* top: 0px;
-  left: 270px; */
+  top: 0px;
+  left: 270px;
  
 }
 /*-----------------Search-bar-----------------*/
