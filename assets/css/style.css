@@ -55,9 +55,12 @@ header > a:last-of-type {
   color: #0065fc;
   font-weight: bold;
   margin-top: 6px;
+}
+.inscription_link{
   position: absolute;
   top: 30px;
-  right: 5px;
+  /* right: 5px; */
+  left: 120px;
 }
 
 /*inscription*/
@@ -75,8 +78,8 @@ header > nav ul {
 
 header > nav ul li {
   border-bottom: 3px solid #f2f2f2;
-  padding-bottom: 15px;
-  flex-grow: 1; /*s'etire pour prendre l'espace totalement*/
+  /* padding-bottom: 15px;
+  flex-grow: 1; s'etire pour prendre l'espace totalement */
 }
 
 header > nav ul li a {
@@ -95,7 +98,11 @@ header > nav li:hover a {
   opacity: 0.6;
   transition: 0.3s;
 }
-
+.inscription_link {
+  position: absolute;
+  top: 32;
+ 
+}
 /*-----------------Search-bar-----------------*/
 #search-bar h1 {
   padding: 15px 0;
@@ -365,14 +372,17 @@ header > nav li:hover a {
 }
 
 /*-----------------activities-----------------*/
-#activities {
+#activities{
+  width: 100%;
+}
+.container_activities {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 30px;
 }
 
-#activities a {
+.container_activities a {
   justify-content: space-between;
   display: flex;
   box-shadow: 0.1em 0.1em 1.1em lightgrey;
@@ -381,11 +391,11 @@ header > nav li:hover a {
   margin-top: 20px;
 }
 
-#activities h2 {
+.container_activities h2 {
   font-size: 1.3em;
 }
 
-#activities figure {
+.container_activities figure {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -393,7 +403,7 @@ header > nav li:hover a {
   border-radius: 15px;
 }
 
-#activities figure img {
+.container_activities figure img {
   width: 100%;
   height: 40%;
   flex: 1;
@@ -403,7 +413,7 @@ header > nav li:hover a {
   object-fit: cover;
 }
 
-#activities a h3 {
+.container_activities a h3 {
   color: black;
   flex: 0 0 55px;
   font-weight: 600;
@@ -411,28 +421,28 @@ header > nav li:hover a {
   padding: 0 15px;
 }
 
-#activities a article {
+.container_activities a article {
   height: 100%;
   width: 100%;
 }
 
-#activities img {
+.container_activities img {
   object-position: 0% 0%;
 }
 
-#activities :nth-child(2) a:first-child img {
-  object-position: 0% 0%;
+.container_activities :nth-child(2) a:first-child img {
+  object-position: 0% 37%;
 }
 
-#activities :nth-child(3) a article:first-child img {
+.container_activities :nth-child(3) a article:first-child img {
   object-position: 0% 38%;
 }
 
-#activities :nth-child(5) a article:first-child img {
+.container_activities :nth-child(5) a article:first-child img {
   object-position: 0% 0%;
 }
 
-#activities :nth-child(6) a article:last-child img {
+.container_activities :nth-child(6) a article:last-child img {
   object-position: 0% 5%;
 }
 
@@ -560,7 +570,7 @@ footer ul li a {
   }
 
   /*-----------------activities-----------------*/
-  #activities article {
+  .container_activities article {
     justify-content: space-between;
     display: flex;
     box-shadow: 0.1em 0.1em 1.1em lightgrey;
@@ -568,7 +578,7 @@ footer ul li a {
     height: 350px;
   }
 
-  #activities img {
+  .container_activities img {
     object-position: unset;
   }
 
@@ -590,8 +600,9 @@ footer ul li a {
   }
 
   .d-flexWithWrapW {
-    flex-basis: 27%;
-    margin: 0 0 0 994px;
+    flex-basis: auto;
+    justify-content: space-between;
+    flex-direction: row-reverse;
   }
 
   /*logo reservia calé sur la droite*/
@@ -600,27 +611,44 @@ footer ul li a {
   header {
     flex-direction: row;
     align-items: center;
-    align-items: baseline;
-    margin-top: 20px;
   }
 
   header > nav ul {
-    display: flex;
+    /* display: flex; */
     width: 50%;
-    text-align: center;
+    /* text-align: center; */
     justify-content: flex-end;
   }
 
   header > a:first-of-type {
-    position: none;
     top: 0;
     padding-top: 20px;
+  }
+  .inscription_link{
+    position: static;
   }
 
   header > a:last-of-type {
     color: #0065fc;
     font-weight: bold;
     flex-basis: 55%;
+  }
+  header > nav ul li {
+    border-top: 3px solid transparent;
+    border-bottom: none;
+    padding-top: 53px;
+    flex-grow: 1; /*s'etire pour prendre l'espace totalement*/
+  }
+  
+  header > nav li:hover {
+    border-top: solid 3px #0065fc;
+    border-bottom: solid 3px transparent;
+  }
+
+  header > nav li:hover a {
+    color: #0065fc;
+    opacity: 0.6;
+    transition: 0.3s;
   }
 
   /*inscription*/
@@ -713,7 +741,6 @@ footer ul li a {
   }
 
   #accomodations h2 {
-    width: 77%;
     font-size: 1.2em;
   }
 
@@ -745,50 +772,46 @@ footer ul li a {
   }
 
   /*-----------------Activities-----------------*/
-  #activities {
+  .container_activities {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
   }
 
-  #activities a {
+  .container_activities a {
     justify-content: space-between;
     display: flex;
     box-shadow: 0.1em 0.1em 1.1em lightgrey;
     border-radius: 15px;
-    height: 195px;
-    margin-top: 20px;
+    height: 100%;
+    margin-top: 2px;
   }
-  #activities a h3 {
+  .container_activities a h3 {
     color: black;
     flex: 0 0 55px;
     font-weight: 600;
     line-height: 55px;
     padding: 0 15px;
   }
-  #activities div {
-    height: 500px;
+  .container_activities div {
     display: flex;
     flex-direction: column;
     flex: 1;
   }
-  #activities div:nth-child(2) a {
-    height: 100%;
+  .container_activities div:nth-child(2) a {
+    height: 50%;
     margin: 0 20px 20px;
   }
-  #activities > div:nth-child(2) {
-    height: 500px;
+  .container_activities > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
   }
 
-  #activities div:nth-child(4) {
+  .container_activities div:nth-child(4) {
     display: flex;
-    flex-wrap: wrap;
-    height: 500px;
-    width: auto;
+    justify-content: space-between;
   }
-  #activities div:nth-child(4) a {
-    height: 100%;
+  .container_activities div:nth-child(4) a {
+    height: 50%;
     margin: 0 20px 20px;
   }
   /*-----------------Footer-----------------*/
@@ -796,7 +819,6 @@ footer ul li a {
     display: flex;
     flex-direction: row;
   }
-
   footer ul li a:hover {
     color: #312e2e;
     opacity: 0.6;
