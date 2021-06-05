@@ -59,9 +59,8 @@ header > a:last-of-type {
 .inscription_link {
   position: absolute;
   top: 30px;
-  left: 5px;
+  right: 5px;
   text-align: right;
-  font-size: 800;
   color: #0065fc;
   /*inscription*/
 }
@@ -129,8 +128,8 @@ header > nav li:hover a {
   background: #f2f2f2;
   line-height: 3em;
   width: 3em;
-  text-align: center; 
-  /*text-align: centre l'élement dans le cadre*/;
+  text-align: center;
+  /*text-align: centre l'élement dans le cadre*/
 }
 
 #search-bar form input {
@@ -167,10 +166,11 @@ header > nav li:hover a {
 
 /*-----------------filters-----------------*/
 
-#filters h2 {
+#filters li h2 {
   margin-bottom: 10px;
   font-size: 1.1em;
-  width: 100%;
+  padding: 0;
+  width: 16em;
 }
 
 #filters ul {
@@ -268,7 +268,7 @@ header > nav li:hover a {
   background: white;
   border-radius: 15px;
   padding: 4px;
-  height: 100%;;
+  height: 100%;
 }
 
 #popular figure {
@@ -303,7 +303,6 @@ header > nav li:hover a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: white;
   width: 100%;
 }
 
@@ -320,7 +319,6 @@ header > nav li:hover a {
   align-items: center;
   justify-content: center;
   background: white;
-  border: 1px solid white;
   border-radius: 15px;
   width: 100%;
   padding: 4px;
@@ -451,7 +449,6 @@ header > nav li:hover a {
 /*-----------------footer-----------------*/
 footer div {
   width: 100%;
-  padding-inline: 10px;
   background: #f2f2f2;
   display: block;
 }
@@ -470,7 +467,7 @@ footer ul li a {
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 922px) {
+@media only screen and (min-width: 768px) and (max-width: 1042px) {
   body {
     line-height: 1;
     font-size: 1.5em;
@@ -505,7 +502,7 @@ footer ul li a {
   }
 
   /*-----------------filters-----------------*/
-  #filters h2 {
+  #filters li h2 {
     margin: 20px 15px;
     font-size: 1.3em;
   }
@@ -531,10 +528,9 @@ footer ul li a {
     margin: 60px 0;
   }
   .inscription_link {
-    position: absolute;
     top: 0px;
-    left: 270px;
-    text-align: center;
+    text-align: right;
+    width: auto;
   }
 
   /*-----------------popular-----------------*/
@@ -600,9 +596,35 @@ footer ul li a {
     display: block;
   }
 }
+@media only screen and (min-width: 990px) and (max-width: 1043px) {
+  /*-----------------Activities-----------------*/
+  .container_activities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container_activities a {
+    height: 0em;
+    width: 8em;
+  }
+  .container_activities div {
+    display: flex;
+    flex-direction: row;
+  }
+  #activities div:nth-of-type(2) a:last-child {
+    height: 100%;
+  }
+    /*-----------------Tow parts-----------------*/
+  #accomodations a{
+    width: 8em;
+  }
+  #popular {
+    align-self: flex-start;
+  }
+}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-device-width: 768px) and (min-device-width: 992px) {
+/* Large devices (laptops/desktops, 990px and up) */
+@media only screen and (min-width: 1000px) {
   main {
     flex-direction: column;
   }
@@ -676,7 +698,7 @@ footer ul li a {
     align-items: baseline;
     width: 60%;
   }
-  #filters h2 {
+  #filters li h2 {
     margin-bottom: 10px;
     font-size: 1.1em;
     width: 10%;
