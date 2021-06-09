@@ -596,13 +596,15 @@ footer ul li a {
     display: block;
   }
 }
-@media only screen and (min-width: 990px) and (max-width: 1043px) {
+@media only screen and (min-width: 1040px) and (max-width: 1300px) {
   /*-----------------Activities-----------------*/
   .container_activities {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
+  
   .container_activities a {
     height: 0em;
     width: 8em;
@@ -620,11 +622,12 @@ footer ul li a {
   }
   #popular {
     align-self: flex-start;
+    justify-content: space-between;
   }
 }
 
 /* Large devices (laptops/desktops, 990px and up) */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 989px) {
   main {
     flex-direction: column;
   }
