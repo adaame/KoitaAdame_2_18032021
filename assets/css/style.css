@@ -58,8 +58,8 @@ header > a:last-of-type {
 }
 .inscription_link {
   position: absolute;
-  top: 30px;
-  right: 5px;
+  top: 8px;
+  left: 14px;
   text-align: right;
   color: #0065fc;
   /*inscription*/
@@ -80,12 +80,11 @@ header > nav ul {
 header > nav ul li {
   border-bottom: 3px solid #f2f2f2;
   padding-bottom: 15px;
-  /*flex-grow: 1; s'etire pour prendre l'espace totalement */
 }
 
 header > nav ul li a {
   color: black;
-  padding: 15px 42px 15px 57px;
+  padding: 15px 42px 15px 60px;
   width: 100%;
   /* rend la zone li a 100% cliquable */
 }
@@ -630,6 +629,8 @@ footer ul li a {
 @media only screen and (min-width: 989px) {
   main {
     flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .d-flexWithWrapW {
@@ -644,6 +645,8 @@ footer ul li a {
   header {
     flex-direction: row;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   header > nav ul {
@@ -872,6 +875,8 @@ footer ul li a {
   footer {
     display: flex;
     flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   footer ul li a:hover {
     color: #312e2e;
