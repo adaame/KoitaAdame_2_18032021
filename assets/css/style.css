@@ -84,8 +84,7 @@ header > nav ul li {
 
 header > nav ul li a {
   color: black;
-  padding: 15px 42px 15px 60px;
-  width: 100%;
+  padding: 15px 40px 15px 61px;
   /* rend la zone li a 100% cliquable */
 }
 
