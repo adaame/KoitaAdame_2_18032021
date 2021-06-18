@@ -58,8 +58,8 @@ header > a:last-of-type {
 }
 .inscription_link {
   position: absolute;
-  top: 8px;
-  left: 14px;
+  top: 25px;
+  right: 0px;
   text-align: right;
   color: #0065fc;
   /*inscription*/
